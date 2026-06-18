@@ -22,6 +22,9 @@ import { execFileSync } from "node:child_process";
 import { readFileSync, writeFileSync, existsSync, appendFileSync } from "node:fs";
 
 const MARKETPLACE_FILE = ".claude-plugin/marketplace.json";
+// Discovery target: plugin repos live under fnrhombus and are scanned by topic.
+// This is intentionally distinct from the marketplace's own identity (fnclaude,
+// the publisher org this repo is hosted under) — see the marketplace object below.
 const OWNER = "fnrhombus";
 const DISCOVERY_TOPIC = "claude-code-plugin";
 
@@ -149,8 +152,10 @@ for (const repo of live) {
 entries.sort((a, b) => a.name.localeCompare(b.name));
 
 const marketplace = {
-  name: "fnrhombus-plugins",
-  owner: { name: OWNER },
+  // Marketplace identity = the fnclaude publisher org (where this repo lives).
+  // Not OWNER, which is only the fnrhombus discovery target for plugin repos.
+  name: "fnclaude",
+  owner: { name: "fnclaude" },
   plugins: entries,
 };
 

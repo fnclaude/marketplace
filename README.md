@@ -1,14 +1,14 @@
-# fnrhombus plugins
+# fnclaude plugins
 
-Central [Claude Code](https://code.claude.com) plugin marketplace for plugins published by [@fnrhombus](https://github.com/fnrhombus).
+Central [Claude Code](https://code.claude.com) plugin marketplace published under [@fnclaude](https://github.com/fnclaude).
 
 ## Install
 
 Run these inside Claude Code:
 
 ```
-/plugin marketplace add fnrhombus/claude-plugins
-/plugin install <plugin-name>@fnrhombus-plugins
+/plugin marketplace add fnclaude/marketplace
+/plugin install <plugin-name>@fnclaude
 ```
 
 Browse available plugins in [`.claude-plugin/marketplace.json`](./.claude-plugin/marketplace.json) or on the [GitHub topic page](https://github.com/search?q=topic%3Aclaude-code-plugin+user%3Afnrhombus&type=repositories).
@@ -31,7 +31,7 @@ Plugin authors do not need to touch this repo. They just:
 The cron will pick up the plugin within 24 hours, or immediately if the author runs:
 
 ```bash
-gh workflow run update-marketplace.yml --repo fnrhombus/claude-plugins
+gh workflow run update-marketplace.yml --repo fnclaude/marketplace
 ```
 
 ## Why pull instead of push?
