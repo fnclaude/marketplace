@@ -1,6 +1,6 @@
 name: Update marketplace
 
-# Pulls plugin metadata from every public fnrhombus repo tagged with the
+# Pulls plugin metadata from every public fnclaude repo tagged with the
 # 'claude-code-plugin' topic, rebuilds .claude-plugin/marketplace.json, and
 # commits any changes. Writes only to this repo — needs no cross-repo auth.
 

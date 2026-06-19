@@ -8,7 +8,7 @@
       "name": "claude-code-pathfix",
       "source": {
         "source": "github",
-        "repo": "fnrhombus/claude-code-pathfix",
+        "repo": "fnclaude/pathfix",
         "ref": "main"
       },
       "description": "Claude Code hook that transparently converts Windows paths to POSIX in Bash commands — eliminating retry loops and saving tokens",
@@ -16,14 +16,14 @@
       "author": {
         "name": "fnrhombus"
       },
-      "repository": "https://github.com/fnrhombus/claude-code-pathfix",
+      "repository": "https://github.com/fnclaude/pathfix",
       "license": "MIT"
     },
     {
       "name": "claude-code-worktree-paths",
       "source": {
         "source": "github",
-        "repo": "fnrhombus/claude-code-worktree-paths",
+        "repo": "fnclaude/worktree-paths",
         "ref": "claude-code-worktree-paths-v2.0.0"
       },
       "description": "Claude Code plugin: customize where `--worktree` worktrees go and what branch they get, via repoSettings templates in settings.json.",
@@ -31,27 +31,57 @@
       "author": {
         "name": "fnrhombus"
       },
-      "repository": "https://github.com/fnrhombus/claude-code-worktree-paths",
+      "repository": "https://github.com/fnclaude/worktree-paths",
+      "license": "MIT"
+    },
+    {
+      "name": "claude-token-tracker",
+      "source": {
+        "source": "github",
+        "repo": "fnclaude/token-tracker",
+        "ref": "main"
+      },
+      "description": "Tracks token usage and automatically adjusts Claude's efficiency behavior based on weekly and session limits",
+      "version": "1.0.0",
+      "author": {
+        "name": "rhom6us"
+      },
+      "repository": "https://github.com/fnclaude/token-tracker",
+      "license": "MIT"
+    },
+    {
+      "name": "done",
+      "source": {
+        "source": "github",
+        "repo": "fnclaude/done",
+        "ref": "main"
+      },
+      "description": "Session wrap-up skills for Claude Code: /done (a completeness checklist) and /getitdone (auto-resolves the obvious, surfaces the rest).",
+      "version": "0.1.0",
+      "author": {
+        "name": "fnrhombus"
+      },
+      "repository": "https://github.com/fnclaude/done",
       "license": "MIT"
     },
     {
       "name": "fnsessionsave",
       "source": {
         "source": "github",
-        "repo": "fnrhombus/fnsessionsave",
+        "repo": "fnclaude/sessionsave",
         "ref": "main"
       },
       "description": "Save structured session summaries to project memory. Never lose context across sessions.",
       "version": "0.1.0",
       "author": "fnrhombus",
-      "repository": "https://github.com/fnrhombus/fnsessionsave",
+      "repository": "https://github.com/fnclaude/sessionsave",
       "license": "MIT"
     },
     {
       "name": "winforms-mcp",
       "source": {
         "source": "github",
-        "repo": "fnrhombus/winforms-mcp-plugin",
+        "repo": "fnclaude/winforms-mcp-plugin",
         "ref": "main"
       },
       "description": "WinForms automation MCP server — headless UI automation for Windows desktop apps using FlaUI",
@@ -59,7 +89,7 @@
       "author": {
         "name": "fnrhombus"
       },
-      "repository": "https://github.com/fnrhombus/winforms-mcp-plugin",
+      "repository": "https://github.com/fnclaude/winforms-mcp-plugin",
       "license": "MIT"
     }
   ]

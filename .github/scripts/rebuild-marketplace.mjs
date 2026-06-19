@@ -2,7 +2,7 @@
 /**
  * rebuild-marketplace.mjs
  *
- * Discover every public fnrhombus repo tagged with the `claude-code-plugin`
+ * Discover every public fnclaude repo tagged with the `claude-code-plugin`
  * topic, fetch each one's .claude-plugin/plugin.json from its default branch,
  * and rewrite this repo's .claude-plugin/marketplace.json with entries pointing
  * back at each plugin's own repo.
@@ -22,10 +22,10 @@ import { execFileSync } from "node:child_process";
 import { readFileSync, writeFileSync, existsSync, appendFileSync } from "node:fs";
 
 const MARKETPLACE_FILE = ".claude-plugin/marketplace.json";
-// Discovery target: plugin repos live under fnrhombus and are scanned by topic.
-// This is intentionally distinct from the marketplace's own identity (fnclaude,
-// the publisher org this repo is hosted under) — see the marketplace object below.
-const OWNER = "fnrhombus";
+// Discovery target: plugin repos live under fnclaude and are scanned by topic.
+// This is the same org the marketplace's own identity points at — see the
+// marketplace object below.
+const OWNER = "fnclaude";
 const DISCOVERY_TOPIC = "claude-code-plugin";
 
 // ---------------------------------------------------------------------------
@@ -152,8 +152,8 @@ for (const repo of live) {
 entries.sort((a, b) => a.name.localeCompare(b.name));
 
 const marketplace = {
-  // Marketplace identity = the fnclaude publisher org (where this repo lives).
-  // Not OWNER, which is only the fnrhombus discovery target for plugin repos.
+  // Marketplace identity = the fnclaude publisher org (where this repo lives),
+  // which now also matches OWNER, the discovery target for plugin repos.
   name: "fnclaude",
   owner: { name: "fnclaude" },
   plugins: entries,
