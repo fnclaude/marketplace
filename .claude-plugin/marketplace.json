@@ -20,21 +20,6 @@
       "license": "MIT"
     },
     {
-      "name": "claude-code-worktree-paths",
-      "source": {
-        "source": "github",
-        "repo": "fnclaude/worktree-paths",
-        "ref": "claude-code-worktree-paths-v2.0.0"
-      },
-      "description": "Claude Code plugin: customize where `--worktree` worktrees go and what branch they get, via repoSettings templates in settings.json.",
-      "version": "2.0.0",
-      "author": {
-        "name": "fnrhombus"
-      },
-      "repository": "https://github.com/fnclaude/worktree-paths",
-      "license": "MIT"
-    },
-    {
       "name": "claude-token-tracker",
       "source": {
         "source": "github",
